@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+
+header{
+    background-color: #02202f;
+    color: white;
+    padding: 10px;
+    box-shadow: black 2px 3px 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header figure{
+    display: flex;
+    padding: 10px;
+
+    }
+
+figure h1{
+    margin-left: 10px;
+    font-size: 25px;
+    display: flex;
+    letter-spacing: 5px;
+    text-shadow: white 2px 2px 3px;
+}
+
+#logo_h{
+    width: 45px;
+    height: 40px;
+    border-radius: 15px;
+
+    
+}
+.sobre_nosotros{
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    
+}
+.contacto{
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+
+}
+
+
+.contain_info_icons{
+    display: flex;
+    margin-right: 20px;    
+}
+
+.sobre_nosotros a{
+    text-decoration: none;
+    color:aliceblue;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-bottom: solid transparent;
+}
+
+.sobre_nosotros a:hover{
+    cursor: pointer;
+    border-bottom:solid whitesmoke 2px;
+    transition:all ease  .6s;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px whitesmoke;
+}
+.contacto a{
+    text-decoration: none;
+    color:aliceblue;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-bottom: solid transparent;
+
+}
+
+.contacto a:hover{
+    cursor: pointer;
+    border-bottom:solid whitesmoke;
+    transition:all ease .6s;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px whitesmoke;
+}
