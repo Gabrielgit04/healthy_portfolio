@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+
+}
+
+body{
+    background-color: rgb(245, 251, 255);
 }
 
 header{
@@ -12,6 +17,9 @@ header{
     box-shadow: black 2px 3px 4px;
     display: flex;
     justify-content: space-between;
+}
+.title{
+    font-family: "coffecake",Arial, Helvetica, sans-serif,;
 }
 
 header figure{
@@ -85,4 +93,14 @@ figure h1{
     transition:all ease .6s;
     transform: scale(1.1);
     text-shadow: 0 0 5px whitesmoke;
+}
+
+main section h2{
+    font-family: "coffecake", Arial, Helvetica, sans-serif;
+}
+
+
+@font-face{
+    font-family: "coffecake";
+    src: url(http://127.0.0.1:5500/src/fonts/CoffeCake.ttf) format("truetype");
 }
