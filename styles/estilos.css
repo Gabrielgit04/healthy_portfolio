@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-family: "poppinsBold",Arial, Helvetica, sans-serif;
 
 }
 
@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
 }
 .title{
-    font-family:Arial, Helvetica, sans-serif,;
+    font-family: "poppinsBold",Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -34,7 +34,7 @@ figure h1{
     font-size: 25px;
     display: flex;
     letter-spacing: 5px;
-    text-shadow: white 2px 2px 3px;
+    text-shadow: white 0 0 4px;
 }
 
 #logo_h{
@@ -96,13 +96,146 @@ figure h1{
     text-shadow: 0 0 5px whitesmoke;
 }
 
-main section h2{
-    font-family: "poppins",Arial, Helvetica, sans-serif;
-    font-size: 35px;
+.subtitle_welcome{
+    font-family: "poppinsBold",Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: white 0 0 3px;
+    margin:0 0 0 20px;
+    letter-spacing: 2px;
 }
 
+.seccion_introduccion{
+    background:linear-gradient( rgba(0,0, 0,0.6),rgba(0,0, 0,0.6)),url(http://127.0.0.1:5500/src/img/salud.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 455px;
+}
 
+.seccion_introduccion p{
+    color: whitesmoke;
+    margin: 60px 0 0 30px;
+    font-size: 18px;
+    width: 480px;
+    letter-spacing: 2px;
+}
+
+.contain_info_introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.img_menu_principal{
+    width: 200px;
+    height:350px;
+    border-radius: 10px;
+    margin:20px 0 0 100px;
+    z-index: 1;
+    position: relative;
+    left: 60px;
+    transition: all ease .4s;
+    box-shadow: white 0 0 4px;
+
+}
+
+.nutritionview{
+    width: 180px;
+    height:300px;
+    border-radius: 10px;
+    margin:45px 0px 0 0;
+    z-index: 0;
+    transition: all ease .5s;
+    box-shadow: white 0 0 5px;
+
+}
+
+.seccion_introduccion figure{
+    display: flex;
+    margin-right: 30px;
+}
+
+.nutritionview:hover{
+    scale: 1.2;
+    transition: all ease .4s;
+    z-index: 1;
+    position: relative;
+    right:20px ;
+    box-shadow: white 0 0 10px;
+}
+
+.img_menu_principal:hover{
+    scale: 1.04;
+    transition: all ease .4s;
+    z-index: 1;
+    box-shadow: white 0 0 10px;
+}
+
+.downloadApp{
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    margin:60px 0 0 100px;
+    border-radius: 8px;
+    border:transparent;
+    letter-spacing: 4px;
+    box-shadow: whitesmoke 0 0 10px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.downloadApp:hover{
+    transform: scale(1.1);
+    transition: all ease .4s;
+    background-color: #02202f;
+    color: aliceblue;
+    border: none;
+    text-shadow: 0 0 7px whitesmoke;
+}
+
+.seccion_info{
+    display: flex;
+}
+
+.figOne, .figTwo, .figTree, .figFourth{
+    margin: 40px 20px 40px 25px;
+    height: 400px;
+    width: 230px;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.figOne img, .figTwo img, .figTree img, .figFourth img{
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.figOne h4, .figTwo h4, .figTree h4, .figFourth h4{
+    color: white;
+    margin-top: 5px;
+}
+ .figOne:hover{
+    background-color: aliceblue;
+    color: black;
+    content: "hola wachiturro";
+    transform: rotate(360);
+}
 @font-face{
     font-family: "poppins";
     src: url(http://127.0.0.1:5500/src/fonts/poppins/Poppins-Italic.ttf) format("truetype");
+
+}
+
+@font-face{
+    font-family: "poppinsBold";
+    src: url(http://127.0.0.1:5500/src/fonts/poppins/Poppins-Bold.ttf) format("truetype");
+
 }
