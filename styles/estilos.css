@@ -10,6 +10,7 @@ body{
     background-color: rgb(245, 251, 255);
 }
 
+/* header principal de la landing */
 header{
     background-color: #02202f;
     color: white;
@@ -21,7 +22,9 @@ header{
 .title{
     font-family: "poppinsBold",Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin: 5px 0 0 10px;
 }
+
 
 header figure{
     display: flex;
@@ -38,9 +41,10 @@ figure h1{
 }
 
 #logo_h{
-    width: 45px;
-    height: 40px;
+    width: 50px;
+    height: 45px;
     border-radius: 15px;
+    background-color: aliceblue;
 
     
 }
@@ -95,10 +99,12 @@ figure h1{
     transform: scale(1.1);
     text-shadow: 0 0 5px whitesmoke;
 }
+/* hasta aca el header principal */
 
+/* aca empieza la informacion de introduccion, imagen, subtitulos, parrafos */
 .subtitle_welcome{
     font-family: "poppinsBold",Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size:45px;
     color: whitesmoke;
     text-shadow: white 0 0 3px;
     margin:0 0 0 20px;
@@ -116,7 +122,7 @@ figure h1{
 
 .seccion_introduccion p{
     color: whitesmoke;
-    margin: 60px 0 0 30px;
+    margin: 20px 0 0 30px;
     font-size: 18px;
     width: 480px;
     letter-spacing: 2px;
@@ -131,12 +137,13 @@ figure h1{
 }
 .img_menu_principal{
     width: 200px;
-    height:350px;
+    height:320px;
     border-radius: 10px;
-    margin:20px 0 0 100px;
+    margin:0 0 0 100px;
     z-index: 1;
     position: relative;
     left: 60px;
+    bottom: 30px;
     transition: all ease .4s;
     box-shadow: white 0 0 4px;
 
@@ -144,9 +151,9 @@ figure h1{
 
 .nutritionview{
     width: 180px;
-    height:300px;
+    height:280px;
     border-radius: 10px;
-    margin:45px 0px 0 0;
+    margin:0px 0px 0 0;
     z-index: 0;
     transition: all ease .5s;
     box-shadow: white 0 0 5px;
@@ -195,39 +202,156 @@ figure h1{
     border: none;
     text-shadow: 0 0 7px whitesmoke;
 }
-
-.seccion_info{
-    display: flex;
-}
-
+/* hasta aca llega la seccion de introduccion */
+/* secciones y funcion que posee healthypath */
 .figOne, .figTwo, .figTree, .figFourth{
-    margin: 40px 20px 40px 25px;
-    height: 400px;
-    width: 230px;
-    background-color: darkslategray;
+    margin: 20px 20px 40px 25px;
+    height: 315px;
+    width: 220px;
+    background-color: #30819b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
+    box-shadow: 0 0 10px black;
 }
 .figOne img, .figTwo img, .figTree img, .figFourth img{
     width: 200px;
-    height: 350px;
+    height: 270px;
     border-radius: 10px;
+    border: none;
 }
 
 .figOne h4, .figTwo h4, .figTree h4, .figFourth h4{
     color: white;
     margin-top: 5px;
 }
- .figOne:hover{
-    background-color: aliceblue;
-    color: black;
-    content: "hola wachiturro";
-    transform: rotate(360);
+
+.funcion_healthypath{
+    margin: 30px;
 }
+.funcion_healthypath header{
+    padding: 20px;
+    max-width: fit-content;
+    background-color: rgb(248, 254, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 5px darkslategray;
+}
+
+.funcion_healthypath header h3{
+    color: darkslategray;
+    text-shadow: darkslategray 0 0 2px;
+    letter-spacing: 2px;
+}
+
+.funcion_healthypath p{
+    margin: 20px 0 0 30px;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    width: 900px;
+    text-align: center;
+}
+.dispone{
+    margin: 30px 0 0 0;
+    padding: 20px;
+    background-color:rgb(248, 254, 255) ;
+    border-radius: 10px;
+    box-shadow: 0 0 5px darkslategray;
+    color: darkslategray;
+    text-shadow: darkslategray 0 0 2px;
+    letter-spacing: 2px;
+    max-width: fit-content;
+
+}
+
+
+
+.registro_box, .menu_box, .nutrition_box, .login_box, .activity_box{
+    display: flex;
+    background-color: rgb(239, 236, 236);
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 40px 20px 0px;
+    box-shadow: 0 0 6px darkslategray;
+}
+
+.menu_box, .login_box, .mover_activitybox{
+    animation: ap_left  ;
+    animation-timeline: view();
+    animation-range: entry 0;
+    margin-left: 40px;
+}
+
+.registro_box h5, .menu_box h5, .nutrition_box h5, .login_box h5, .activity_box h5{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: darkslategray;
+    font-style: italic;
+}
+
+.mover_registrobox, .mover_nutrition{
+    display: flex;
+    justify-content: right;
+    animation: ap_right;
+    animation-timeline: view();
+    animation-range: entry 0% ;
+
+
+}
+/* Carrusel de imagenes */
+.section_carrusel{
+    margin:  40px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel_caps{
+    display: flex;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(239, 236, 236);
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+    
+}
+.carrusel_caps img{
+    width:0;
+    height: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: all ease .4s;
+    border-radius: 2px;
+}
+
+.carrusel_caps img:hover{
+    opacity: 1;
+    width: 120px;
+    filter: contrast(120%);
+    cursor: crosshair; 
+}
+
+.subtitulo_carrusel{
+    padding: 20px;
+    max-width: fit-content;
+    background-color: rgb(248, 254, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 5px darkslategray;
+    color: darkslategray;
+    text-shadow: darkslategray 0 0 2px;
+    letter-spacing: 2px;
+    margin: 30px 0px 0 40px;
+}
+
+/* animaciones e importacion de fuentes*/
 @font-face{
     font-family: "poppins";
     src: url(http://127.0.0.1:5500/src/fonts/poppins/Poppins-Italic.ttf) format("truetype");
@@ -238,4 +362,35 @@ figure h1{
     font-family: "poppinsBold";
     src: url(http://127.0.0.1:5500/src/fonts/poppins/Poppins-Bold.ttf) format("truetype");
 
+}
+
+@keyframes ap_left{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.2);
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+
+    }
+    
+}
+@keyframes ap_right{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.2);
+        transform: translate(100);
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transform: 0;
+
+    }
+    
 }
