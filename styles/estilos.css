@@ -12,6 +12,7 @@ body{
 
 /* header principal de la landing */
 header{
+    animation: aparecer 3s;
     background-color: #02202f;
     color: white;
     padding: 10px;
@@ -65,7 +66,7 @@ figure h1{
 
 .contain_info_icons{
     display: flex;
-    margin-right: 20px;    
+    margin-right: 10px;    
 }
 
 .sobre_nosotros a{
@@ -118,6 +119,7 @@ figure h1{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 455px;
+    animation: aparecer 3s;
 }
 
 .seccion_introduccion p{
@@ -267,35 +269,37 @@ figure h1{
 
 
 
-.registro_box, .menu_box, .nutrition_box, .login_box, .activity_box{
+.sueno_box, .menu_box, .nutrition_box, .recomen_box, .activity_box{
     display: flex;
     background-color: rgb(239, 236, 236);
     width: fit-content;
     height: fit-content;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     margin: 20px 40px 20px 0px;
     box-shadow: 0 0 6px darkslategray;
 }
 
-.menu_box, .login_box, .mover_activitybox{
+.menu_box, .recomen_box, .mover_activitybox{
     animation: ap_left  ;
     animation-timeline: view();
     animation-range: entry 0;
     margin-left: 40px;
 }
 
-.registro_box h5, .menu_box h5, .nutrition_box h5, .login_box h5, .activity_box h5{
+.sueno_box h5, .menu_box h5, .nutrition_box h5, .recomen_box h5, .activity_box h5{
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 21px;
     color: darkslategray;
+    text-align: justify;
+    margin-right: 15px;
     font-style: italic;
 }
 
-.mover_registrobox, .mover_nutrition{
+.mover_suenobox, .mover_nutrition{
     display: flex;
     justify-content: right;
     animation: ap_right;
@@ -306,7 +310,7 @@ figure h1{
 }
 /* Carrusel de imagenes */
 .section_carrusel{
-    margin:  40px 40px;
+    margin:  50px 40px;
     display: flex;
     justify-content: center;
 }
@@ -324,7 +328,7 @@ figure h1{
 }
 .carrusel_caps img{
     width:0;
-    height: 400px;
+    height: 420px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
@@ -334,7 +338,7 @@ figure h1{
 
 .carrusel_caps img:hover{
     opacity: 1;
-    width: 120px;
+    width: 80px;
     filter: contrast(120%);
     cursor: crosshair; 
 }
@@ -351,6 +355,159 @@ figure h1{
     margin: 30px 0px 0 40px;
 }
 
+.box_infoimportant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 40px;  
+}
+
+.box_infoimportant article{
+    background-color:rgb(239, 236, 236) ;
+    width: 320px;
+    height: 210px;
+    border-radius:10px ;
+    box-shadow: 0 0 10px darkslategray;
+    margin: 10px 20px;
+    padding: 15px;
+}
+
+.box_infoimportant .objetivo, .mision, .vision{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px whitesmoke;
+}
+.objetivo h4{
+    background-color: #f7ad19;
+    border-radius: 6px;
+    color: white;
+    text-shadow: 0 0 8px whitesmoke;
+}
+.mision h4{
+    background-color: #30819b;
+    border-radius: 6px;
+    color: white;
+}
+.vision h4{
+    background-color:#02202f;
+    border-radius: 6px;
+    color: white;
+}
+.vision p, .mision p, .objetivo ul{
+    font-size: 10px;
+    text-align: start;
+    font-weight: lighter;
+    padding: 8px;
+    text-shadow: none;
+    margin-top: 5px;
+}
+.vision p{
+    line-height: 2;
+}
+
+.mision,.vision, .objetivo{
+    filter: blur(5px);
+}
+
+.mision:hover, .vision:hover, .objetivo:hover{
+    cursor: crosshair;
+    filter: blur(0);
+    transition: all ease .4s;
+    transform: scale(1.1);
+
+}
+#touch{
+    height: 20px;
+    width: 25px;
+}
+.subtitulo_organigrama{
+    padding: 20px;
+    max-width: fit-content;
+    font-size: 20px;
+    background-color: rgb(248, 254, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 5px darkslategray;
+    color: darkslategray;
+    text-shadow: darkslategray 0 0 2px;
+    letter-spacing: 2px;
+    margin: 40px 0 40px 40px;
+    border: transparent;
+}
+
+.organigramaimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+.organigramaimg img{
+    width: 700px;
+    height: 450px;
+    box-shadow: 0 0 10px darkslategray;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.box_serv_sol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.servicios, .soluciones{
+    background-color:rgb(239, 236, 236) ;
+    width: 350px;
+    height: 380px;
+    border-radius:10px ;
+    box-shadow: 0 0 10px darkslategray;
+    margin: 10px 20px;
+    padding: 15px;
+}
+.servicios h4, .soluciones h4{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px whitesmoke;
+    background-color: #02202f;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 4px;
+    
+}
+
+.servicios p, .soluciones p{
+    font-size: 12px;
+    text-align: start;
+    font-weight: lighter;
+    padding: 8px;
+    letter-spacing: 2px;
+    text-shadow: none;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+hr{
+    background-color: rgba(119, 119, 119, 0.39);
+}
+footer{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+footer h4{
+    font-size: 20px;
+    border-radius: 10px;
+    color: darkslategray;
+    text-shadow: darkslategray 0 0 2px;
+    letter-spacing: 2px;
+    margin:20px 10px ;
+}
+footer p{
+    text-indent: 40px;
+    color: #02202f;
+}
 /* animaciones e importacion de fuentes*/
 @font-face{
     font-family: "poppins";
@@ -393,4 +550,17 @@ figure h1{
 
     }
     
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
 }
